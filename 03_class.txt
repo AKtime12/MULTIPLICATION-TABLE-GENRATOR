@@ -1,0 +1,122 @@
+def print_table(num): 
+    for i in range(1, 11):
+        print(f"{num} x {i} = {num*i}")
+
+def print_tables_in_range(a, b):
+    for num in range(a, b + 1):
+        print(f"Multiplication table for {num}:")
+        print_table(num)
+        print()  # Print a newline for better readability
+
+def main():
+    while True:
+        print("\nEnter the range in between you want to print multiplication table (a to b) OR a number :")
+        print("Choose r=range or n=number or q=quit")
+        choice = input("Enter your choice (r/n/q): ").strip().lower()
+        if choice == 'n':
+            num = int(input("Enter the number: "))
+            print_table(num)
+        elif choice == 'r':
+            a = int(input("Enter the starting number (a): "))
+            b = int(input("Enter the ending number (b): "))
+            print_tables_in_range(a, b)
+        elif choice == 'q':
+            print("Exiting the multiplication table calculator.")
+            break
+        else:
+            print("Invalid choice. Please enter 'r', 'n', or 'q'.")
+
+if __name__== "__main__":
+    main()
+
+
+OUTPUT SCREEN::
+
+PS C:\Users\mk\OneDrive\Desktop\class python> py 03_class.py
+
+Enter the range in between you want to print multiplication table (a to b) OR a number :
+Choose r=range or n=number or q=quit
+Enter your choice (r/n/q): n
+Enter the number: 5
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35
+5 x 8 = 40
+5 x 9 = 45
+5 x 10 = 50
+
+Enter the range in between you want to print multiplication table (a to b) OR a number :
+Choose r=range or n=number or q=quit
+Enter your choice (r/n/q): r
+Enter the starting number (a): 1
+Enter the ending number (b): 5
+Multiplication table for 1:
+1 x 1 = 1
+1 x 2 = 2
+1 x 3 = 3
+1 x 4 = 4
+1 x 5 = 5
+1 x 6 = 6
+1 x 7 = 7
+1 x 8 = 8
+1 x 9 = 9
+1 x 10 = 10
+
+Multiplication table for 2:
+2 x 1 = 2
+2 x 2 = 4
+2 x 3 = 6
+2 x 4 = 8
+2 x 5 = 10
+2 x 6 = 12
+2 x 7 = 14
+2 x 8 = 16
+2 x 9 = 18
+2 x 10 = 20
+
+Multiplication table for 3:
+3 x 1 = 3
+3 x 2 = 6
+3 x 3 = 9
+3 x 4 = 12
+3 x 5 = 15
+3 x 6 = 18
+3 x 7 = 21
+3 x 8 = 24
+3 x 9 = 27
+3 x 10 = 30
+
+Multiplication table for 4:
+4 x 1 = 4
+4 x 2 = 8
+4 x 3 = 12
+4 x 4 = 16
+4 x 5 = 20
+4 x 6 = 24
+4 x 7 = 28
+4 x 8 = 32
+4 x 9 = 36
+4 x 10 = 40
+
+Multiplication table for 5:
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35
+5 x 8 = 40
+5 x 9 = 45
+5 x 10 = 50
+
+
+Enter the range in between you want to print multiplication table (a to b) OR a number :
+Choose r=range or n=number or q=quit
+Enter your choice (r/n/q): q
+Exiting the multiplication table calculator.
+PS C:\Users\mk\OneDrive\Desktop\class python>
