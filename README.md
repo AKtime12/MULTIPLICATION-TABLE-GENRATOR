@@ -1,5 +1,5 @@
 # MULTIPLICATION-TABLE-GENRATOR
-It is a python program which used as multiplication table genrator ."  "
+It is a python program which used as multiplication table genrator ."\n"
 def print_table(num): 
     for i in range(1, 11):
         print(f"{num} x {i} = {num*i}")
